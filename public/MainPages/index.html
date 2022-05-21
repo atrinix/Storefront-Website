@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../Styles/style.css">
+        <link rel="shortcut icon" href="#">
+        <script type="text/javascript" src="../JavaScripts/header.js"></script>
+        <script type="text/javascript" src="../JavaScripts/read.js"></script>
+        <script type="text/javascript" src="../JavaScripts/search.js"></script>
+        <title>Illegal Animals - Home</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="../JavaScripts/productCookie.js"></script>
+        <!-- Begin header -->
+        <!-- Header updated with javascript dynamic page generation-CC -->
+        <div id="header">
+            <div id="toolbar">
+                <!-- Logo, search bar, cart (ZC) -->
+                <!-- Company logo -->
+                <a href="../MainPages/index.html">
+                    <img id="header-logo" src="../Assets/logo.png" alt="Company logo">
+                </a>
+                <div class="spacer"></div>
+                <!-- Search bar -->
+                <input type="text" id="header-search" placeholder="Search">
+                <!-- Search icon -->
+                <a onclick="getSearchTerm()">
+                    <img src="../Assets/magnifying_glass.png" width="25px">
+                </a>
+                <!-- Shopping cart icon -->
+                <div id="cart-icon">
+                    <a href="../MainPages/Shipping.html">
+                        <img src="../Assets/cart.png" alt="Shopping cart icon" width="50px">
+                    </a>
+                </div>
+            </div>  <!-- End logo, search bar, cart -->
+            <div id="header-nav"> <!-- Begin nav links -->
+                <ul role="navigation">
+                    <li>
+                        <a href="../MainPages/index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="current-page-nav-link"><a href="../MainPages/shop.html">Shop</a>
+                        <ul class="dropdown">
+                            <li class="current-page-nav-link"><a href="../AnimalPages/amphibianPage.html">Amphibians</a>
+                                <ul class="dropdown nested">
+                                    <li>
+                                        <a  href="../animalpage?animal=coloradorivertoad">Colorado River Toad</a> 
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=corroboree">Corroboree Frog</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=poisondartfrog">Poison Dart Frog</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="../AnimalPages/avianPage.html">Avians</a>
+                                <ul class="dropdown nested">
+                                    <li>
+                                        <a href="../animalpage?animal=californiacondor"> California Condor</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=cassowary"> Cassowary</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=secretary">Secretary Bird</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="../AnimalPages/mammalPage.html">Mammals</a>
+                                <ul class="dropdown nested">
+                                    <li>
+                                        <a href="../animalpage?animal=pangolin">Pangolin</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=platypus">Platypus</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=tiger">Tiger</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="../AnimalPages/reptilePage.html">Reptiles</a>
+                                <ul class="dropdown nested">
+                                    <li>
+                                        <a href="../animalpage?animal=gilamonster" > Gila Monster</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=kingcobra"> King Kobra</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=komododragon">Komodo Dragon</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../MainPages/about.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../MainPages/faq.html">
+                            FAQ
+                        </a>
+                    </li>
+                    <li><a href="../MainPages/login.html">Account</a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="../MainPages/login.html">
+                                    Login
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../MainPages/membership.html">
+                                    Sign Up
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>  <!-- End header -->
+        <div id="main-body">
+            <div id="sidebar">
+                <!-- Begin sidebar nav column -->
+                <!-- Sidebar updated with javascript dynamic page generation-CC -->
+                <div class="accordion">
+                    <!-- 1st menu  -->
+                    <a href="../MainPages/shop.html">
+                        <input type="radio" name="trg1" id="acc1">
+                        <label class="title" for="acc1">Browse by Kingdom</label>
+                    </a>
+                    <!-- 2nd menu -->
+                    <input type="radio" name="trg1" id="acc2">
+                    <label for="acc2">Amphibians</label>
+                    <div class="content">
+                        <div class="inner">
+                            <a href="../AnimalPages/amphibianPage.html">
+                                View All Amphibians
+                            </a>
+                        </div>
+                        <div class="inner">
+                            <a  href="../animalpage?animal=coloradorivertoad">Colorado River Toad</a> 
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=corroboree">Corroboree Frog</a>
+    
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=poisondartfrog">Poison Dart Frog</a>
+                        </div>
+                    </div>
+                    <!-- 3rd menu -->
+                    <input type="radio" name="trg1" id="acc3">
+                    <label for="acc3">Avians</label>
+                    <div class="content">
+                        <div class="inner">
+                            <a href="../AnimalPages/avianPage.html">
+                                View All Avians
+                            </a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=californiacondor"> California Condor</a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=cassowary"> Cassowary</a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=secretary">Secretary Bird</a>
+                        </div>
+                    </div>
+                    <!-- 4th menu -->
+                    <input type="radio" name="trg1" id="acc4">
+                    <label for="acc4">Mammals</label>
+                    <div class="content">
+                        <div class="inner">
+                            <a href="../AnimalPages/mammalPage.html">
+                                View All Mammals
+                            </a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=pangolin">Pangolin</a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=platypus">Platypus</a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=tiger">Tiger</a>
+                        </div>
+                    </div>
+                    <!-- 5th menu -->
+                    <input type="radio" name="trg1" id="acc5">
+                    <label for="acc5">Reptiles</label>
+                    <div class="content">
+                        <div class="inner">
+                            <a href="../AnimalPages/reptilePage.html">
+                                View All Reptiles
+                            </a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=gilamonster" > Gila Monster</a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=kingcobra"> King Kobra</a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=komododragon">Komodo Dragon</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End sidebar nav (ZC) -->
+
+
+            <div id="main-content">  <!-- Begin main page content (ZC) -->
+             
+                <div id="featured">
+                    <div class="section-banner attached-banner">
+                        Featured Animals
+                    </div>
+                    <div id="featured-thumbnails">
+                        <div class="image-container">
+                            <a href="../animalpage?animal=cassowary">
+                                <img src="../Assets/BirdPhotos/cassowary_main.jpg" alt="A cassowary">
+                            </a>
+                        </div>
+                        <div class="image-container primary-image">
+                            <a href="../animalpage?animal=poisondartfrog">
+                                <img src="../Assets/AmphibianPhotos/poisonDart_main.jpg" alt="A poison dart frog">
+                            </a>
+                        </div>
+                        <div class="image-container">
+                            <a  href="../animalpage?animal=gilamonster">
+                                <img src="../Assets/ReptilePhotos/gilamonster.jpg" alt="A gila monster">
+                            </a>
+                        </div>
+                    </div>
+                </div>  <!-- End Featured Animals section (ZC) -->
+                
+                <div id="deal-of-the-day">
+                    <div class="section-banner attached-banner">
+                        Deals of the day
+                    </div>
+
+                    <div class="horizontal-scroll-container">
+                    
+                        <div class="deal-of-the-day-item">
+                            <a  href="../animalpage?animal=poisondartfrog">
+                                <span class="dotd-title">Poison Dart Frog</span>
+                                <div class="dotd-content">
+                                    <div class="dotd-description-container">
+                                        <p class="price promo-price">$1,100</p>
+                                        <p class="old-price">$1,500</p>
+                                        <p class="subtext">Free shipping!</p>
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="../Assets/AmphibianPhotos/poisonDart_main.jpg">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="deal-of-the-day-item">
+                            <a href="../animalpage?animal=tiger">
+                                <span class="dotd-title">Tiger</span>
+                                <div class="dotd-content">
+                                    <div class="dotd-description-container">
+                                        <p class="price promo-price">$11,200</p>
+                                        <p class="old-price">$17,500</p>
+                                        <p class="subtext">Free shipping!</p>
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="../Assets/MammalsPhotos/tigerAngle1.jpg">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="deal-of-the-day-item">
+                            <a href="../animalpage?animal=platypus">
+                                <span class="dotd-title">Platypus</span>
+                                <div class="dotd-content">
+                                    <div class="dotd-description-container">
+                                        <p class="price promo-price">$2,300</p>
+                                        <p class="old-price">$4,500</p>
+                                        <p class="subtext">Free shipping!</p>
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="../Assets/MammalsPhotos/platypusAngle1.jpg">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="deal-of-the-day-item">
+                            <a href="../animalpage?animal=pangolin">
+                                <span class="dotd-title">Pangolin</span>
+                                <div class="dotd-content">
+                                    <div class="dotd-description-container">
+                                        <p class="price promo-price">$6,100</p>
+                                        <p class="old-price">$8,600</p>
+                                        <p class="subtext">Free shipping!</p>
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="../Assets/MammalsPhotos/pangolinMain.jpg">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                </div>  <!-- End deal of the day section (ZC) -->
+
+            </div>  <!-- End main page content (ZC) -->
+
+        </div>
+        <div id="footer">  <!-- Begin footer (ZC) -->
+            <a class="footer-link" href="../MainPages/index.html">
+                <h5>Home</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/shop.html">
+                <h5>Shop</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/about.html">
+                <h5>About Us</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/faq.html">
+                <h5>FAQ</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/login.html">
+                <h5>Login</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/membership.html">
+                <h5>New Membership</h5>
+            </a>
+        </div>
+        <!-- End footer -->
+    </body>
+</html>

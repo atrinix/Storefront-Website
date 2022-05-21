@@ -1,0 +1,83 @@
+
+#sidebar
+    .accordion
+        <!-- 1st menu  -->
+        a(href="../MainPages/shop.html")
+            input#acc1(type="radio" name="trg1")
+            label.title(for="acc1")
+                | Browse by Kingdom
+
+        <!-- 2nd menu -->
+        input#acc2(type="radio" name="trg1")
+        label(for="acc2")
+            | Amphibians
+
+        .content
+            .inner
+                a(href="../AnimalPages/amphibianPage.html")
+                    | View All Amphibians
+            .inner
+                a(href="./animalpage?animal=coloradorivertoad")
+                    | Colorado River Toad
+            .inner
+                a(href="./animalpage?animal=corroboree")
+                    | Corroboree Frog
+            .inner
+                a(href="./animalpage?animal=poisondartfrog")
+                    | Poison Dart Frog
+
+        <!-- 3rd menu -->
+        input#acc3(type="radio" name="trg1")
+
+        label(for="acc3")
+            | Avians
+        .content
+            .inner
+                a(href="../AnimalPages/avianPage.html")
+                    | View All Avians
+            .inner
+                a(href="../animalpage?animal=californiacondor")
+                    | California Condor
+            .inner
+                a(href="../animalpage?animal=cassowary")
+                    | Cassowary
+            .inner
+                a(href="../animalpage?animal=secretary")
+                    | Secretary Bird
+
+        <!-- 4th menu -->
+        input#acc4(type="radio" name="trg1")
+        label(for="acc4")
+            | Mammals
+        .content
+            .inner
+                a(href="../AnimalPages/mammalPage.html")
+                    | View All Mammals
+            .inner
+                a(href="../animalpage?animal=pangolin")
+                    | Pangolin
+            .inner
+                a(href="../animalpage?animal=platypus")
+                    | Platypus
+            .inner
+                a(href="../animalpage?animal=tiger")
+                    | Tiger
+
+        <!-- 5th menu -->
+        input#acc5(type="radio" name="trg1")
+        label(for="acc5")
+            | Reptiles
+
+        .content
+            .inner
+                a(href="../AnimalPages/reptilePage.html")
+                    | View All Reptiles
+            .inner
+                a(href="../animalpage?animal=gilamonster")
+                    | Gila Monster
+            .inner
+                a(href="../animalpage?animal=kingkobra")
+                    | King Kobra
+            .inner
+                a(href="../animalpage?animal=komododragon")
+                    | Komodo Dragon

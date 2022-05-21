@@ -1,0 +1,28 @@
+head
+    title= title
+    link(rel="stylesheet" href="./Styles/style.css")
+    link(rel="stylesheet" href="./Styles/productStyle.css")
+    <script type="text/javascript" src="./JavaScripts/header.js"></script>
+    <script type="text/javascript" src="./JavaScripts/search.js"></script>
+body
+    include header.jade
+    #main-body
+        include ./sidebar.jade
+        #main-content
+
+            #searchShell.search-result-container                 
+                .section-banner
+                    | Showing results for <i>"#{term}"</i>
+
+                each animal in animals
+                    .search-result
+                        a(href="./animalpages?animal=" + animal.key)
+                                
+                            .image-container
+                                img.search-result-image(src=animal.images[0])
+
+                            .search-result-description-container
+                                h3.search-result-title= animal.name
+                                p.search-result-description= animal.description
+
+    include footer.jade

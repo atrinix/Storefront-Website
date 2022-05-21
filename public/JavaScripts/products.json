@@ -1,0 +1,197 @@
+
+
+{
+    "animal": {
+        "pangolin": {
+            "name": "Pangolin",
+            "kingdom": "mammal",
+            "size": "medium",
+            "blood_temp": "warm",
+            "venomous": "false",
+            "description": "Do you wish to start a hit netflix documentary? Are German shepards not enough for home security ? Stop rationalizing the pros and cons and buy yourself an actual tiger. For a limited time buying your first tiger comes with 3 free goats for your special kitty's first three meals. Ascend the social ladder on the back of an apex predator today!",
+            "images": [
+                "../Assets/MammalsPhotos/pangolinAngle1.jpg",
+                "../Assets/MammalsPhotos/pangolinAngle2.jpg",
+                "../Assets/MammalsPhotos/pangolinAngle3.jpg",
+                "../Assets/MammalsPhotos/pangolinAngle4.jpg",
+                "../Assets/MammalsPhotos/pangolinMain.jpg"
+            ],
+            "price": "11,675"
+        },
+        "tiger": {
+            "name": "Tiger",
+            "kingdom": "mammal",
+            "description": "Do you wish to start a hit netflix documentary? Are German shepards not enough for home security ? Stop rationalizing the pros and cons and buy yourself an actual tiger. For a limited time buying your first tiger comes with 3 free goats for your special kitty's first three meals. Ascend the social ladder on the back of an apex predator today!",
+            "size": "large",
+            "blood_temp": "warm",
+            "venomous": "false",
+            "images": [
+                "../Assets/MammalsPhotos/tigerAngle1.jpg",
+                "../Assets/MammalsPhotos/tigerAngle2.jpg",
+                "../Assets/MammalsPhotos/tigerAngle3.jpg",
+                "../Assets/MammalsPhotos/tigerAngle4.jpg",
+                "../Assets/MammalsPhotos/tigerMain.jpg"
+            ],
+            "price": "27,320"
+        },
+        "platypus": {
+            "name": "Platypus",
+            "kingdom": "mammal",
+            "description": " Have an affinity for abominations of nature? Then the platypus may be the perfect pet for you. Platypuses are one of the most confusing and biologically diverse oganisms in the entire animal kingdom Become the proud owner of evolution's greatest mistake today.<br>",
+            "size": "medium",
+            "blood_temp": "warm",
+            "venomous": "true",
+            "images": [
+                "../Assets/MammalsPhotos/platypusAngle1.jpg",
+                "../Assets/MammalsPhotos/platypusAngle2.jpg",
+                "../Assets/MammalsPhotos/platypusAngle3.jpg",
+                "../Assets/MammalsPhotos/platypusAngle4.jpg",
+                "../Assets/MammalsPhotos/platypusMain.jpg"
+            ],
+            "price": "8,450"
+        },
+        "californiacondor": {
+            "name": "California Condor",
+            "kingdom": "avian",
+            "description": " This beautiful new world vulture is becoming increasingly rare.  Each condor is individually tagged so you can be sure you're getting the genuine article.  Get yours today while supplies last!",
+            "blood_temp": "warm",
+            "size": "large",
+            "venomous": "false",
+            "images": [
+                "../Assets/BirdPhotos/condor_angle1.jpg",
+                "../Assets/BirdPhotos/condor_angle2.jpg",
+                "../Assets/BirdPhotos/condor_angle3.jpg",
+                "../Assets/BirdPhotos/condor_angle4.jpg",
+                "../Assets/BirdPhotos/condor_main.jpg"
+            ],
+            "price": "4,329.97"
+        },
+        "cassowary": {
+            "name": "Cassowary",
+            "kingdom": "avian",
+            "description": "Tired of your boring old emu? Wish your pet peacock was big enough to ride?You need a cassowary! This beautiful beast was liberated from the harsh, open plains of New Zealand. It still has most of its feathers and barely shows any signs of wear. Become the proud owner of a modern day dinosaur.Eat the biggest omelets you've ever had!",
+            "size": "large",
+            "blood_temp": "warm",
+            "venomous": "false",
+            "images": [
+                "../Assets/BirdPhotos/cassowary_angle1.jpg",
+                "../Assets/BirdPhotos/cassowary_angle2.jpg",
+                "../Assets/BirdPhotos/cassowary_angle3.jpg",
+                "../Assets/BirdPhotos/cassowary_angle4.jpg",
+                "../Assets/BirdPhotos/cassowary_main.jpg"
+            ],
+            "price": "6,928.75"
+        },
+        "secretary": {
+            "name": "Secretary",
+            "kingdom": "avian",
+            "description": "Better than a lawn flamingo! Known for their prowess in hunting snakes, the secretary bird can keep your property snake free while remaining at minimal risk of snake bites due to its long legs and razor sharp beak.Bonus: Buy a secretary bird and get a mating pair of snakes, free! Warning: May become territorial. Not liable for facial mangling or loss of vision.",
+            "size": "large",
+            "blood_temp": "warm",
+            "venomous": "false",
+            "images": [
+                "../Assets/BirdPhotos/secretary_angle1.jpg",
+                "../Assets/BirdPhotos/secretary_angle2.jpg",
+                "../Assets/BirdPhotos/secretary_angle3.jpg",
+                "../Assets/BirdPhotos/secretary_angle4.jpg",
+                "../Assets/BirdPhotos/secretary_main.jpg"
+            ],
+            "price": "1,209.99"
+        },
+        "kingcobra": {
+            "name": "King Cobra",
+            "kingdom": "reptile",
+            "description": "Enjoy living life on the edge? Own the king of snakes right now, with the longest species of venomous snakes,with venom that's potent enough to killan entire elephant! Just be sure to avoid their bites!",
+            "size": "medium",
+            "blood_temp": "cold",
+            "venomous": "true",
+            "images": [
+                "../Assets/ReptilePhotos/kobra_angle1.jpg",
+                "../Assets/ReptilePhotos/kobra_angle2.jpg",
+                "../Assets/ReptilePhotos/kobra_angle3.jpg",
+                "../Assets/ReptilePhotos/kobra_angle4.jpg",
+                "../Assets/ReptilePhotos/kingkobra.jpg"
+            ],
+            "price": "769.69"
+        },
+        "gilamonster": {
+            "name": "Gila Monster",
+            "kingdom": "reptile",
+            "description": "Introducing one of the very fewpoisonous lizards in the world, the Gila Monster! Sporting it's cool iconic black and orange pattern,these desert dwellers often like to spend their time underground, and usually eat small mammals.Be sure to avoid their bites!",
+            "size": "small",
+            "blood_temp": "cold",
+            "venomous": "true",
+            "images": [
+                "../Assets/ReptilePhotos/gila_angle1.jpg",
+                "../Assets/ReptilePhotos/gila_angle2.jpg",
+                "../Assets/ReptilePhotos/gila_angle3.jpg",
+                "../Assets/ReptilePhotos/gila_angle4.jpg",
+                "../Assets/ReptilePhotos/gilamonster.jpg"
+            ],
+            "price": "369.69"
+        },
+        "komododragon": {
+            "name": "Komodo Dragon",
+            "kingdom": "reptile",
+            "description": "Make your neighbors jealous by owning a reallife dragon today with the world's largest lizard living right in your backyard! These badass creatures can grow up to eight feet. With their diet, enjoy a rodent-free home with your very own personal dragon! Small Disclaimer: Does not actually breathe fire (unfortunately)",
+            "size": "large",
+            "blood_temp": "cold",
+            "venomous": "true",
+            "images": [
+                "../Assets/ReptilePhotos/komodo_angle1.jpg",
+                "../Assets/ReptilePhotos/komodo_angle2.jpg",
+                "../Assets/ReptilePhotos/komodo_angle3.jpg",
+                "../Assets/ReptilePhotos/komodo_angle4.jpg",
+                "../Assets/ReptilePhotos/komodo_dragon.jpg"
+            ],
+            "price": "969.69"
+        },
+        "coloradorivertoad": {
+            "name": "Colorado River Toad",
+            "kingdom": "amphibian",
+            "description": "Enjoy the psychoactive effects of holding a new pet toad. The Colorado River Toad, also known as the Sonoran Desert Toad, is a double whammy as an exotic pet. Pass it around your next party as a slimy surprise for your guests. Note: we are not responisble for psychological damage of bad trips.",
+            "size": "small",
+            "blood_temp": "cold",
+            "venomous": "true",
+            "images": [
+                "../Assets/AmphibianPhotos/coloradoToad_angle1.jpg",
+                "../Assets/AmphibianPhotos/coloradoToad_angle2.jpg",
+                "../Assets/AmphibianPhotos/coloradoToad_angle3.jpg",
+                "../Assets/AmphibianPhotos/coloradoToad_angle4.jpg",
+                "../Assets/AmphibianPhotos/coloradoToad_main.jpg"
+            ],
+            "price": "3500"
+        },
+        "poisondartfrog": {
+            "name": "Poison Dart Frog",
+            "kingdom": "amphibian",
+            "description": "Everyone loves the thrill of getting a new pet.But what about a pet you can't pet. et a Poison Dart Frog as an exotic ceter piece... Or as an unsuspecting way to \"take out\" an adversary.",
+            "size": "small",
+            "blood_temp": "cold",
+            "venomous": "true",
+            "images": [
+                "../Assets/AmphibianPhotos/poisonDart_angle1.jpg",
+                "../Assets/AmphibianPhotos/poisonDart_angle2.jpg",
+                "../Assets/AmphibianPhotos/poisonDart_angle3.jpg",
+                "../Assets/AmphibianPhotos/poisonDart_angle4.jpg",
+                "../Assets/AmphibianPhotos/poisonDart_main.jpg"
+            ],
+            "price": "1,100"
+        },
+        "corroboree": {
+            "name": "Corroboree Frog",
+            "kingdom": "amphibian",
+            "description": " One of nature's specialties. A frog that produces its own poison. These little guys from down under are extra tiny. Unfortunately not available in bulk order. These babies are \"critically endangered\"! Get them while they're still in stock!",
+            "size": "small",
+            "blood_temp": "cold",
+            "venomous": "true",
+            "images": [
+                "../Assets/AmphibianPhotos/corroboree_angle1.jpg",
+                "../Assets/AmphibianPhotos/corroboree_angle2.jpg",
+                "../Assets/AmphibianPhotos/corroboree_angle3.jpg",
+                "../Assets/AmphibianPhotos/corroboree_main.jpg"
+            ],
+            "price": "4,300"
+        }
+    }
+}

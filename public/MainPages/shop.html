@@ -1,0 +1,555 @@
+<!--
+    Author:         Arielle Riray
+    Here is the updated shop page for the CSS assignment
+-->
+<!DOCTYPE html
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/AriStyle.css">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <script type="text/javascript" src="../JavaScripts/search.js"></script>
+    <script type="text/javascript" src="../JavaScripts/header.js"></script>
+    
+    <title>Illegal Animals - Shop</title>
+</head>
+<body>
+    <script type="text/javascript" src="../JavaScripts/productCookie.js"></script>
+
+    <!-- Begin header -->
+    <!-- Heade updated with javascript dynamic page generation-CC -->
+    <div id="header">
+        <div id="toolbar">
+            <!-- Logo, search bar, cart (ZC) -->
+            <!-- Company logo -->
+            <a href="../MainPages/index.html">
+                <img id="header-logo" src="../Assets/logo.png" alt="Company logo">
+            </a>
+            <div class="spacer"></div>
+            <!-- Search bar -->
+            <input type="text" id="header-search" placeholder="Search">
+            <!-- Search icon -->
+            <a onclick="getSearchTerm()">
+                <img src="../Assets/magnifying_glass.png" width="25px">
+            </a>
+            <!-- Shopping cart icon -->
+            <div id="cart-icon">
+                <a href="../MainPages/Shipping.html">
+                    <img src="../Assets/cart.png" alt="Shopping cart icon" width="50px">
+                </a>
+            </div>
+        </div>  <!-- End logo, search bar, cart -->
+        <div id="header-nav"> <!-- Begin nav links -->
+            <ul role="navigation">
+                <li>
+                    <a href="../MainPages/index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="current-page-nav-link"><a href="../MainPages/shop.html">Shop</a>
+                    <ul class="dropdown">
+                        <li class="current-page-nav-link"><a href="../AnimalPages/amphibianPage.html">Amphibians</a>
+                            <ul class="dropdown nested">
+                                <li>
+                                    <a href="../animalpage?animal=coloradorivertoad">Colorado River Toad</a> 
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=corroboree">Corroboree Frog</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=poisondartfrog">Poison Dart Frog</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="../AnimalPages/avianPage.html">Avians</a>
+                            <ul class="dropdown nested">
+                                <li>
+                                    <a href="../animalpage?animal=californiacondor"> California Condor</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=cassowary"> Cassowary</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=secretary">Secretary Bird</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="../AnimalPages/mammalPage.html">Mammals</a>
+                            <ul class="dropdown nested">
+                                <li>
+                                    <a href="../animalpage?animal=pangolin">Pangolin</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=platypus">Platypus</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=tiger">Tiger</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="../AnimalPages/reptilePage.html">Reptiles</a>
+                            <ul class="dropdown nested">
+                                <li>
+                                    <a href="../animalpage?animal=gilamonster" > Gila Monster</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=kingcobra"> King Kobra</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=komododragon">Komodo Dragon</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../MainPages/about.html">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="../MainPages/faq.html">
+                        FAQ
+                    </a>
+                </li>
+                <li><a href="../MainPages/login.html">Account</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="../MainPages/login.html">
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../MainPages/membership.html">
+                                Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+           
+        </div>
+    </div>  <!-- End header -->
+    <div id="main-body">
+        <div id="sidebar">
+            <!-- Begin sidebar nav column -->
+            <!-- Sidebar updated with javascript dynamic page generation-CC -->
+            <div class="accordion">
+                <!-- 1st menu  -->
+                <a href="../MainPages/shop.html">
+                    <input type="radio" name="trg1" id="acc1">
+                    <label class="title" for="acc1">Browse by Kingdom</label>
+                </a>
+                <!-- 2nd menu -->
+                <input type="radio" name="trg1" id="acc2">
+                <label for="acc2">Amphibians</label>
+                <div class="content">
+                    <div class="inner">
+                        <a href="../AnimalPages/amphibianPage.html">
+                            View All Amphibians
+                        </a>
+                    </div>
+                    <div class="inner">
+                        <a href="../animalpage?animal=coloradorivertoad">Colorado River Toad</a>
+                    </div>
+                    <div class="inner">
+                        <a href="../animalpage?animal=corroboree">Corroboree Frog</a>
+
+                    </div>
+                    <div class="inner">
+                        <a href="../animalpage?animal=poisondartfrog">Poison Dart Frog</a>
+                    </div>
+                </div>
+                <!-- 3rd menu -->
+                <input type="radio" name="trg1" id="acc3">
+                <label for="acc3">Avians</label>
+                <div class="content">
+                    <div class="inner">
+                        <a href="../AnimalPages/avianPage.html">
+                            View All Avians
+                        </a>
+                    </div>
+                    <div class="inner">
+                        <a href="../animalpage?animal=californiacondor"> California Condor</a>
+                    </div>
+                    <div class="inner">
+                        <a href="../animalpage?animal=cassowary"> Cassowary</a>
+                    </div>
+                    <div class="inner">
+                        <a href="../animalpage?animal=secretary">Secretary Bird</a>
+                    </div>
+                </div>
+                <!-- 4th menu -->
+                <input type="radio" name="trg1" id="acc4">
+                <label for="acc4">Mammals</label>
+                <div class="content">
+                    <div class="inner">
+                        <a href="../AnimalPages/mammalPage.html">
+                            View All Mammals
+                        </a>
+                    </div>
+                    <div class="inner">
+                        <a href="../animalpage?animal=pangolin">Pangolin</a>
+                    </div>
+                    <div class="inner">
+                        <a href="../animalpage?animal=platypus">Platypus</a>
+                    </div>
+                    <div class="inner">
+                        <a href="../animalpage?animal=tiger">Tiger</a>
+                    </div>
+                </div>
+                <!-- 5th menu -->
+                <input type="radio" name="trg1" id="acc5">
+                <label for="acc5">Reptiles</label>
+                <div class="content">
+                    <div class="inner">
+                        <a href="../AnimalPages/reptilePage.html">
+                            View All Reptiles
+                        </a>
+                    </div>
+                    <div class="inner">
+                        <a href="../animalpage?animal=gilamonster"> Gila Monster</a>
+                    </div>
+                    <div class="inner">
+                        <a href="../animalpage?animal=kingkobra"> King Kobra</a>
+                    </div>
+                    <div class="inner">
+                        <a href="../animalpage?animal=komododragon">Komodo Dragon</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End sidebar nav (ZC) -->
+        <!-- Begin main page content (ZC) -->
+
+        <div class="shop-spacer">
+            <div class="shop-area">
+
+                <div class="filters">
+                    <div class="shop-product-spacer">
+                        <div id="FilterButtonForm">
+                            <h3>Filters</h3>
+                            <button class="shop-filter-button active" onclick="filterSelection('all')"> Show all</button>
+                            <button class="shop-filter-button" onclick="filterSelection('cold')"> Cold Blooded</button>
+                            <button class="shop-filter-button" onclick="filterSelection('warm')"> Warm Blooded</button>
+                            <button class="shop-filter-button" onclick="filterSelection('toxic')"> Toxic</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animals warm">
+                    <div class="shop-product-spacer">
+                        <form action="" class="shop-form">
+                            <div class="shop-animal-images">
+                                <a href="../animalpage?animal=californiacondor">
+                                    <img src="../Assets/BirdPhotos/condor_main.jpg" alt="Avatar" class="shop-animal-images">
+
+                                    <div class="shop-overlay shop-overlay-main">
+                                        <div class="shop-overlay-price"><p>$4,329.97</p></div>
+                                        <p class="shop-overlay-desciption">
+                                            Get em' before they go away forever!
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-link-text">
+                                <h2>
+                                    <a href="../animalpage?animal=californiacondor"> California Condor</a>
+                                </h2>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="animals warm">
+                    <div class="shop-product-spacer">
+                        <form action="" class="shop-form">
+                            <div class="shop-animal-images">
+                                <a href="../animalpage?animal=cassowary">
+                                    <img src="../Assets/BirdPhotos/cassowary_main.jpg" alt="Avatar" class="shop-animal-images">
+
+                                    <div class="shop-overlay shop-overlay-main">
+                                        <div class="shop-overlay-price"><p>$6,928.75</p></div>
+                                        <p class="shop-overlay-desciption">
+                                            It's a big shiny emu!
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-link-text">
+                                <h2>
+                                    <a href="../animalpage?animal=cassowary"> Cassowary</a>
+                                </h2>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="animals cold toxic">
+                    <div class="shop-product-spacer">
+                        <form action="" class="shop-form">
+                            <div class="shop-animal-images">
+                                <a href="../animalpage?animal=coloradorivertoad">
+                                    <img src="../Assets/AmphibianPhotos/coloradoToad_main.jpg" alt="Avatar" class="shop-animal-images">
+                                    <div class="shop-overlay shop-overlay-main">
+                                        <div class="shop-overlay-price"><p>$3,500</p></div>
+                                        <p class="shop-overlay-desciption">
+                                            Take a TRIP to the Rockies with a new amphibian friend.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-link-text">
+                                <h3>
+                                    <a href="../animalpage?animal=coloradorivertoad">Colorado River Toad</a>
+                                </h3>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="animals cold toxic">
+                    <div class="shop-product-spacer">
+                        <form action="" class="shop-form">
+                            <div class="shop-animal-images">
+                                <a href="../animalpage?animal=corroboree">
+                                    <img src="../Assets/AmphibianPhotos/corroboree_main.jpg" alt="Avatar" class="shop-animal-images">
+
+                                    <div class="shop-overlay shop-overlay-main">
+                                        <div class="shop-overlay-price">Price: $4,300</div>
+                                        <p class="shop-overlay-desciption">
+                                            Striped Endangered Beauty from Australia!
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-link-text">
+                                <h2>
+                                    <a href="../animalpage?animal=corroboree">Corroboree Frog</a>
+                                </h2>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="animals cold toxic">
+                    <div class="shop-product-spacer">
+                        <form action="" class="shop-form">
+                            <div class="shop-animal-images">
+                                <a href="../animalpage?animal=gilamonster">
+                                    <img src="../Assets/ReptilePhotos/gilamonster.jpg" alt="Avatar" class="shop-animal-images">
+
+                                    <div class="shop-overlay shop-overlay-main">
+                                        <div class="shop-overlay-price">Price: $4600</div>
+                                        <p class="shop-overlay-desciption">
+                                            A monster the size of your hand!
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-link-text">
+                                <h2>
+                                    <a href="../animalpage?animal=gilamonster"> Gila Monster</a>
+                                </h2>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="animals cold toxic">
+                    <div class="shop-product-spacer">
+                        <form action="" class="shop-form">
+                            <div class="shop-animal-images">
+                                <a href="../animalpage?animal=kingcobra">
+                                    <img src="../Assets/ReptilePhotos/kingkobra.jpg" alt="Avatar" class="shop-animal-images">
+
+                                    <div class="shop-overlay shop-overlay-main">
+                                        <div class="shop-overlay-price"><p>$769.69</p></div>
+                                        <p class="shop-overlay-desciption">
+                                            The King of all snakes!
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-link-text">
+                                <h2>
+                                    <a href="../animalpage?animal=kingkobra"> King Kobra</a>
+                                </h2>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="animals cold toxic">
+                    <div class="shop-product-spacer">
+                        <form action="" class="shop-form">
+                            <div class="shop-animal-images">
+                                <a href="../animalpage?animal=komododragon">
+                                    <img src="../Assets/ReptilePhotos/komodo_dragon.jpg" alt="Avatar" class="shop-animal-images">
+
+                                    <div class="shop-overlay shop-overlay-main">
+                                        <div class="shop-overlay-price"><p>$969.69</p></div>
+                                        <p class="shop-overlay-desciption">
+                                            A dragon without wings!
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-link-text">
+                                <h2>
+                                    <a href="../animalpage?animal=komododragon">Komodo Dragon</a>
+                                </h2>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="animals warm">
+                    <div class="shop-product-spacer">
+                        <form action="" class="shop-form">
+                            <div class="shop-animal-images">
+                                <a href="../animalpage?animal=pangolin">
+                                    <img src="../Assets/MammalsPhotos/pangolinMain.jpg" alt="Avatar" class="shop-animal-images">
+
+                                    <div class="shop-overlay shop-overlay-main">
+                                        <div class="shop-overlay-price">$11,675</div>
+                                        <p class="shop-overlay-desciption">
+                                            The living shield!
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-link-text">
+                                <h2>
+                                    <a href="../animalpage?animal=pangolin">Pangolin</a>
+                                </h2>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="animals warm toxic">
+                    <div class="shop-product-spacer">
+                        <form action="" class="shop-form">
+                            <div class="shop-animal-images">
+                                <a href="../animalpage?animal=platypus">
+                                    <img src="../Assets/MammalsPhotos/platypusMain.jpg" alt="Avatar" class="shop-animal-images">
+
+                                    <div class="shop-overlay shop-overlay-main">
+                                        <div class="shop-overlay-price"><p>$8,450</p></div>
+                                        <p class="shop-overlay-desciption">
+                                            The most enigmatic mammal of them all!
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-link-text">
+                                <h2>
+                                    <a href="../animalpage?animal=platypus">Platypus</a>
+                                </h2>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="animals cold toxic">
+                    <div class="shop-product-spacer">
+                        <form action="" class="shop-form">
+                            <div class="shop-animal-images">
+                                <a href="../animalpage?animal=poisondartfrog">
+                                    <img src="../Assets/AmphibianPhotos/poisonDart_main.jpg" alt="Avatar" class="shop-animal-images">
+
+                                    <div class="shop-overlay shop-overlay-main">
+                                        <div class="shop-overlay-price"><p>$1,100</p></div>
+                                        <p class="shop-overlay-desciption">
+                                            Dangerous pets are fun; handle with care!
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-link-text">
+                                <h2>
+                                    <a href="../animalpage?animal=poisondartfrog">Poison Dart Frog</a>
+                                </h2>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="animals warm">
+                    <div class="shop-product-spacer">
+                        <form action="" class="shop-form">
+                            <div class="shop-animal-images">
+                                <a href="../animalpage?animal=secretary">
+                                    <img src="../Assets/BirdPhotos/secretary_main.jpg" alt="Avatar" class="shop-animal-images">
+
+                                    <div class="shop-overlay shop-overlay-main">
+                                        <div class="shop-overlay-price"><p>$1,209.99</p></div>
+                                        <p class="shop-overlay-desciption">
+                                            It's an eagle on stilts!
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-link-text">
+                                <h2>
+                                    <a href="../animalpage?animal=secretary">Secretary Bird</a>
+                                </h2>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="animals warm">
+                    <div class="shop-product-spacer">
+                        <form action="" class="shop-form">
+                            <div class="shop-animal-images">
+                                <a href="../animalpage?animal=tiger">
+                                    <img src="../Assets/MammalsPhotos/tigerMain.jpg" alt="Avatar" class="shop-animal-images">
+
+                                    <div class="shop-overlay shop-overlay-main">
+                                        <div class="shop-overlay-price">$27,320</div>
+                                        <p class="shop-overlay-desciption">
+                                            The tyrant of the animal kingdom!
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-link-text">
+                                <h2>
+                                    <a href="../animalpage?animal=tiger">Tiger</a>
+                                </h2>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <script type='text/javascript' src='../JavaScripts/ShopFilter.js'></script>
+            </div>
+        </div>
+
+            <!-- End main page content (ZC) -->
+        </div>
+        <div id="footer">
+            <!-- Begin footer (ZC) -->
+            <a class="footer-link" href="../MainPages/index.html">
+                <h5>Home</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/shop.html">
+                <h5>Shop</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/about.html">
+                <h5>About Us</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/faq.html">
+                <h5>FAQ</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/login.html">
+                <h5>Login</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/membership.html">
+                <h5>New Membership</h5>
+            </a>
+        </div>
+        <!-- End footer -->
+</body>
+</html>

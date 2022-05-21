@@ -1,0 +1,191 @@
+doctype html
+html
+head
+    title= title
+    link(rel="stylesheet" href="./Styles/style.css")
+    link(rel="stylesheet" href="./Styles/productStyle.css")
+    link(rel="stylesheet" href="./Styles/paymentStyle.css")
+    <script type="text/javascript" src="./JavaScripts/header.js"></script>
+    <script type="text/javascript" src="./JavaScripts/search.js"></script>
+
+body
+    include header.jade
+    #main-body
+        #main-content
+            #wrapper
+                .itemRecap
+                    .order
+                        h2 Your order summary
+
+                        #cart-item-section
+                            <!-- Shopping cart items will be dynamically populated here -->
+
+                        h4#ship Shipping: FREE
+                        hr
+
+                        h3#total TOTAL: $0.00
+
+
+                .payment-information
+                    .checkout
+                        a.activeBtn(href="./shipping")
+                            p Shipping
+
+                        a.utilityBtns(href="./checkout")
+                            p Checkout
+
+                        a.utilityBtns(href="./confirmation")
+                            p Confirmation
+
+                        .payment
+                            .fields.fields--2
+                                label.field
+                                    span.fieldlabel(for="firstname")
+                                        | First name
+
+                                    input#firstname.fieldinput(type="text" value="John")
+
+                                label.field
+                                    span.fieldlabel(for="lastname")
+                                        | Last name
+
+                                    input#lastname.fieldinput(type="text" value="Doe")
+
+                            label.field
+                                span.fieldlabel(for="address")
+                                    | Address
+
+                                input#address.fieldinput(type="text")
+
+                            label.field
+                                span.fieldlabel(for="country")
+                                    | Country
+
+                                select#country.fieldinput
+
+                                    option(value="")
+                                    option(value="unitedstates")
+                                        | United States
+
+                            .fields.fields--3
+                                label.field
+                                    span.fieldlabel(for="zipcode")
+                                        | Zip code
+                                    input#zipcode.fieldinput(type="text")
+
+                                label.field
+                                    span.fieldlabel(for="city")
+                                        | City
+                                    input#city.fieldinput(type="text")
+
+                                label.field
+                                    span.fieldlabel(for="state")
+                                        | State
+
+                                    select#state.fieldinput
+                                        option(value="")
+                                        option(value="AL")
+                                            | Alabama
+                                        option(value="AK")
+                                            | Alaska
+                                        option(value="AZ")
+                                            | Arizona
+                                        option(value="AR")
+                                            | Arkansas
+                                        option(value="CA")
+                                            | California
+                                        option(value="CO")
+                                            | Colorado
+                                        option(value="CT")
+                                            | Connecticut
+                                        option(value="DE")
+                                            | Delaware
+                                        option(value="DC")
+                                            | District Of Columbia
+                                        option(value="FL")
+                                            | Florida
+                                        option(value="GA")
+                                            | Georgia
+                                        option(value="HI")
+                                            | Hawaii
+                                        option(value="ID")
+                                            | Idaho
+                                        option(value="IL")
+                                            | Illinois
+                                        option(value="IN")
+                                            | Indiana
+                                        option(value="IA")
+                                            | Iowa
+                                        option(value="KS")
+                                            | Kansas
+                                        option(value="KY")
+                                            | Kentucky
+                                        option(value="LA")
+                                            | Louisiana
+                                        option(value="ME")
+                                            | Maine
+                                        option(value="MD")
+                                            | Maryland
+                                        option(value="MA")
+                                            | Massachusetts
+                                        option(value="MI")
+                                            | Michigan
+                                        option(value="MN")
+                                            | Minnesota
+                                        option(value="MS")
+                                            | Mississippi
+                                        option(value="MO")
+                                            | Missouri
+                                        option(value="MT")
+                                            | Montana
+                                        option(value="NE")
+                                            | Nebraska
+                                        option(value="NV")
+                                            | Nevada
+                                        option(value="NH")
+                                            | New Hampshire
+                                        option(value="NJ")
+                                            | New Jersey
+                                        option(value="NM")
+                                            | New Mexico
+                                        option(value="NY")
+                                            | New York
+                                        option(value="NC")
+                                            | North Carolina
+                                        option(value="ND")
+                                            | North Dakota
+                                        option(value="OH")
+                                            | Ohio
+                                        option(value="OK")
+                                            | Oklahoma
+                                        option(value="OR")
+                                            | Oregon
+                                        option(value="PA")
+                                            | Pennsylvania
+                                        option(value="RI")
+                                            | Rhode Island
+                                        option(value="SC")
+                                            | South Carolina
+                                        option(value="SD")
+                                            | South Dakota
+                                        option(value="TN")
+                                            | Tennessee
+                                        option(value="TX")
+                                            | Texas
+                                        option(value="UT")
+                                            | Utah
+                                        option(value="VT")
+                                            | Vermont
+                                        option(value="VA")
+                                            | Virginia
+                                        option(value="WA")
+                                            | Washington
+                                        option(value="WV")
+                                            | West Virginia
+                                        option(value="WI")
+                                            | Wisconsin
+                                        option(value="WY")
+                                            | Wyoming
+
+                        a.buyBtn(href="../MainPages/CheckoutPage.html")
+                            | Continue

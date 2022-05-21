@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../Styles/style.css">
+        <script type="text/javascript" src="../JavaScripts/header.js"></script>
+        <script type="text/javascript" src="../JavaScripts/search.js"></script>
+        <title>Illegal Animals - Home</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="../JavaScripts/productCookie.js"></script>
+    <!-- Begin header -->
+        <!-- Header updated with javascript dynamic page generation-CC -->
+        <div id="header">
+            <div id="toolbar">
+                <!-- Logo, search bar, cart (ZC) -->
+                <!-- Company logo -->
+                <a href="../MainPages/index.html">
+                    <img id="header-logo" src="../Assets/logo.png" alt="Company logo">
+                </a>
+                <div class="spacer"></div>
+                <!-- Search bar -->
+                <input type="text" id="header-search" placeholder="Search">
+                <!-- Search icon -->
+                <a onclick="getSearchTerm()">
+                    <img src="../Assets/magnifying_glass.png" width="25px">
+                </a>
+                <!-- Shopping cart icon -->
+                <div id="cart-icon">
+                    <a href="../MainPages/Shipping.html">
+                        <img src="../Assets/cart.png" alt="Shopping cart icon" width="50px">
+                    </a>
+                </div>
+            </div>  <!-- End logo, search bar, cart -->
+            <div id="header-nav"> <!-- Begin nav links -->
+                <ul role="navigation">
+                    <li>
+                        <a href="../MainPages/index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="current-page-nav-link"><a href="../MainPages/shop.html">Shop</a>
+                        <ul class="dropdown">
+                            <li class="current-page-nav-link"><a href="../AnimalPages/amphibianPage.html">Amphibians</a>
+                                <ul class="dropdown nested">
+                                    <li>
+                                        <a  href="../animalpage?animal=coloradorivertoad">Colorado River Toad</a> 
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=corroboree">Corroboree Frog</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=poisondartfrog">Poison Dart Frog</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="../AnimalPages/avianPage.html">Avians</a>
+                                <ul class="dropdown nested">
+                                    <li>
+                                        <a href="../animalpage?animal=californiacondor"> California Condor</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=cassowary"> Cassowary</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=secretary">Secretary Bird</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="../AnimalPages/mammalPage.html">Mammals</a>
+                                <ul class="dropdown nested">
+                                    <li>
+                                        <a href="../animalpage?animal=pangolin">Pangolin</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=platypus">Platypus</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=tiger">Tiger</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="../AnimalPages/reptilePage.html">Reptiles</a>
+                                <ul class="dropdown nested">
+                                    <li>
+                                        <a href="../animalpage?animal=gilamonster" > Gila Monster</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=kingcobra"> King Kobra</a>
+                                    </li>
+                                    <li>
+                                        <a href="../animalpage?animal=komododragon">Komodo Dragon</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../MainPages/about.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../MainPages/faq.html">
+                            FAQ
+                        </a>
+                    </li>
+                    <li><a href="../MainPages/login.html">Account</a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="../MainPages/login.html">
+                                    Login
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../MainPages/membership.html">
+                                    Sign Up
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>  <!-- End header -->
+        <div id="main-body">
+            <div id="sidebar">
+                <!-- Begin sidebar nav column -->
+                <!-- Sidebar updated with javascript dynamic page generation-CC -->
+                <div class="accordion">
+                    <!-- 1st menu  -->
+                    <a href="../MainPages/shop.html">
+                        <input type="radio" name="trg1" id="acc1">
+                        <label class="title" for="acc1">Browse by Kingdom</label>
+                    </a>
+                    <!-- 2nd menu -->
+                    <input type="radio" name="trg1" id="acc2">
+                    <label for="acc2">Amphibians</label>
+                    <div class="content">
+                        <div class="inner">
+                            <a href="../AnimalPages/amphibianPage.html">
+                                View All Amphibians
+                            </a>
+                        </div>
+                        <div class="inner">
+                            <a  href="../animalpage?animal=coloradorivertoad">Colorado River Toad</a> 
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=corroboree">Corroboree Frog</a>
+    
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=poisondartfrog">Poison Dart Frog</a>
+                        </div>
+                    </div>
+                    <!-- 3rd menu -->
+                    <input type="radio" name="trg1" id="acc3">
+                    <label for="acc3">Avians</label>
+                    <div class="content">
+                        <div class="inner">
+                            <a href="../AnimalPages/avianPage.html">
+                                View All Avians
+                            </a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=californiacondor"> California Condor</a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=cassowary"> Cassowary</a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=secretary">Secretary Bird</a>
+                        </div>
+                    </div>
+                    <!-- 4th menu -->
+                    <input type="radio" name="trg1" id="acc4">
+                    <label for="acc4">Mammals</label>
+                    <div class="content">
+                        <div class="inner">
+                            <a href="../AnimalPages/mammalPage.html">
+                                View All Mammals
+                            </a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=pangolin">Pangolin</a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=platypus">Platypus</a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=tiger">Tiger</a>
+                        </div>
+                    </div>
+                    <!-- 5th menu -->
+                    <input type="radio" name="trg1" id="acc5">
+                    <label for="acc5">Reptiles</label>
+                    <div class="content">
+                        <div class="inner">
+                            <a href="../AnimalPages/reptilePage.html">
+                                View All Reptiles
+                            </a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=gilamonster" > Gila Monster</a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=kingcobra"> King Kobra</a>
+                        </div>
+                        <div class="inner">
+                            <a href="../animalpage?animal=komododragon">Komodo Dragon</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End sidebar nav (ZC) -->
+
+
+            <div id="main-content">  <!-- Begin main page content (ZC) -->
+                
+                <div class="section-intro">
+                    <div class="section-banner attached-banner">
+                        Frequently Asked Questions
+                    </div>
+                    <div class="intro-content">
+                        <p>If you have any questions about our company
+                            please feel free to check the <a href="../MainPages/about.html">About Us</a> page.
+                        </p>
+                        <p>
+                            Otherwise, here are some the most frequently asked questions from our customers. 
+                        </p>
+                        <p>
+                            If your question is not answered here, don't hesitate to contact us. 
+                        </p>
+                    </div>
+                </div>
+
+                <div id="faq-questions">
+                    <div class="accordion">
+
+                        <input type="radio" id="faq-1" name="faq-q1">
+                        <label for="faq-1"  class="first">From where do we source our exotic animals?</label>
+                        <div class="content">
+                            <div class="inner">
+                                <p>
+                                    This is a tricky question because we source our animals form all over the world.
+                                    We even have animals from multiple continents.
+                                    We love to supply our customers with a variety of exotic pets to ensure their happiness. 
+                                </p>
+                            </div>
+                        </div>
+                        <input type="radio" id="faq-2" name="faq-q2">
+                        <label for="faq-2">What is our return policy?</label>
+                        <div class="content">
+                            <div class="inner">
+                                <p>
+                                    Unfortunately, all sales are final. 
+                                    Due to the uncertainty with the shipping, as well as bothersome customs and animal rights laws, we do not allow returns. 
+                                    Though, if you are unhappy with a purchase not all hope is not lost.
+                                    If you keep your animal in the container it comes in, you can simply leave it at a zoo in the middle of the night.
+                                </p>
+                            </div>
+                        </div>
+                        <input type="radio" id="faq-3" name="faq-q3">
+                        <label for="faq-3">What does my animal need to eat?</label>
+                        <div class="content">
+                            <div class="inner">
+                                <p>
+                                    Due to our variety, we can't answer this specifically. 
+                                    There is a difference in what a Poison Dart Frog needs to eat compared to a Tiger!
+                                    Perhaps one day we will have recommended foods with amounts for your new animal.
+                                    Stay in touch!
+                                </p>
+                            </div>
+                        </div>
+                        <input type="radio" id="faq-4" name="faq-q4">
+                        <label class="last" for="faq-4">Is this legal?</label>
+                        <div class="content">
+                            <div class="inner last">
+                                <p>
+                                    We saved the big question for last: is all of this legal?
+                                    <br>
+                                    It depends.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>  <!-- End main page content (ZC) -->
+
+
+        </div>
+        <div id="footer">  <!-- Begin footer (ZC) -->
+            <a class="footer-link" href="../MainPages/index.html">
+                <h5>Home</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/shop.html">
+                <h5>Shop</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/about.html">
+                <h5>About Us</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/faq.html">
+                <h5>FAQ</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/login.html">
+                <h5>Login</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/membership.html">
+                <h5>New Membership</h5>
+            </a>
+        </div>
+        <!-- End footer -->
+    </body>
+</html>

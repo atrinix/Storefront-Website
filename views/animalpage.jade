@@ -1,0 +1,43 @@
+.product
+    .product-gallery
+        .slider-container
+            .slider
+                .slides
+                    #slides1.slide
+                        #slide.img
+                            #product-section
+                                img(src=animal.images[0])
+                        a.slideprev(href="#slides4" title="Next")
+                        a.slidenext(href="#slides2" title="Next")
+
+                    #slides2.slide
+                        #product-section
+                            img(src=animal.images[1])
+                        a.slideprev(href="#slides1" title="Prev")
+                        a.slidenext(href="#slides3" title="Next")
+
+                    #slides3.slide
+                        #product-section
+                           img(src=animal.images[2])
+                        a.slideprev(href="#slides2" title="Prev")
+                        a.slidenext(href="#slides4" title="Next")
+
+                    #slides4.slide
+                        #product-section
+                            img(src=animal.images[3])
+                        a.slideprev(href="#slides3" title="Prev")
+                        a.slidenext(href="#slides1" title="Prev")
+
+    .product-listing
+        .listingext
+            #name-section.name= animal.name
+            #description-section.info= animal.description
+            #price-section.price= "$"+animal.price
+
+            a.buyBtn(href="#" onclick="addItemToCart('#{animal.key}')")
+                | Add to Cart
+            a.buyBtn(href="../MainPages/Shipping.html" onclick="addItemToCart('#{animal.key}')")
+                | Buy Now
+
+.advertpage
+    img(src="../Assets/Ads/ad1.jpg" alt="")

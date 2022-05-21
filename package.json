@@ -1,0 +1,25 @@
+{
+  "name": "csc317-group-html-storefront-zcolbert",
+  "version": "1.0.0",
+  "description": "This is a GROUP assignment.",
+  "main": "server.js",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r esm server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSC317-Fall-2021/csc317-group-html-storefront-zcolbert.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/CSC317-Fall-2021/csc317-group-html-storefront-zcolbert/issues"
+  },
+  "homepage": "https://github.com/CSC317-Fall-2021/csc317-group-html-storefront-zcolbert#readme"
+}
+

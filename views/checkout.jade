@@ -1,0 +1,74 @@
+  #main-body
+        #wrapper
+           .itemRecap
+               .order
+                    h2 Your order summary
+                    #cart-item-section
+                        <!-- Shopping cart items will be dynamically populated here -->
+                   
+
+                    h4#ship Shipping: FREE
+
+                    hr
+                    h3#total TOTAL: $0.00
+            
+
+            .payment-information
+               .checkout
+                        a.utilityBtns(onclick="buildCartURL()") 
+                            p.opacity Shipping
+                       
+                        a href="../MainPages/CheckoutPage.html" class="activeBtn">
+                            p Checkout
+                       
+                         a.utilityBtns href="../MainPages/Confirmation.html" class="utilityBtns">
+                            p.opacity Confirmation
+                     
+
+                    .payment
+                        .content
+                           .infos
+                                .method
+                                    h2 Choose a payment method
+                                    img.visa( src="../Assets/visa.png" alt='' class="visa")
+                                    img.mastercard(src="../Assets/mastercard.png" alt='' class="mastercard")
+                                    img.paypal(src="../Assets/paypal.png" alt='' class="paypal")
+                            
+
+                                .cardNumber
+                                    p.title Credit card number
+                                    input.number(type="text") 
+                                    input.number(type="text") 
+                                    input.number(type="text")
+                                    input.number(type="text")
+                               
+                                .cardHolderName
+                                    p.title Card holder name
+                                    input(type="text")
+                                
+                                .expiration
+                                    p.title Expiration date
+                                    select
+                                        option(Month)
+                                        option(01)
+                                        option(02)
+                                        option(03)
+                                   
+                                    select
+                                        option(Year)
+                                        option(2019)
+                                        option(2020)
+                                        option(2021)
+                                   
+                               
+                                .security
+                                    p.title CCV 
+                                    input(type="text")
+                                
+                               
+                          
+                            a.buyBtn(href="../MainPages/Confirmation.html") 
+                                |Continue
+                            
+
+               

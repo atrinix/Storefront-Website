@@ -1,0 +1,96 @@
+
+#header
+    #toolbar
+        a(href="../MainPages/index.html")
+            img#header-logo(src="../Assets/logo.png" alt="Company logo")
+
+        .spacer
+        input#header-search(type="text" placeholder="Search")
+        a(onclick="getSearchTerm()")
+            img(src="../Assets/magnifying_glass.png" width="25px")
+
+        #cart-icon
+            a(href="../MainPages/Shipping.html")
+                img(src="../Assets/cart.png" alt="Shopping cart icon" width="50px")
+
+    #header-nav
+        ul(role="navigation")
+            li
+                a(href="../MainPages/index.html")
+                    | Home
+            li
+                a(href="../MainPages/shop.html")
+                    | Shop
+                ul.dropdown
+                    li
+                        a(href="../AnimalPages/amphibianPage.html")
+                            | Amphibians
+                        ul.dropdown.nested
+                            li
+                                a(href="./animalpage?animal=coloradorivertoad")
+                                    | Colorado River Toad
+                            li
+                                a(href="./animalpage?animal=corroboree")
+                                    | Corroboree Frog
+                            li
+                                a(href="./animalpage?animal=poisondartfrog")
+                                    | Poison Dart Frog
+
+                    li
+                        a(href="../AnimalPages/avianPage.html")
+                            | Avians
+                        ul.dropdown.nested
+                            li
+                                a(href="./animalpage?animal=californiacondor")
+                                    | California Condor
+                            li
+                                a(href="../animalpage?animal=cassowary")
+                                    | Cassowary
+                            li
+                                a(href="../animalpage?animal=secretary")
+                                    | Secretary Bird
+
+                    li
+                        a(href="../AnimalPages/mammalPage.html")
+                            | Mammals
+                        ul.dropdown.nested
+                            li
+                                a(href="./animalpage?animal=pangolin")
+                                    | Pangolin
+                            li
+                                a(href="./animalpage?animal=platypus")
+                                    | Platypus
+                            li
+                                a(href="./animalpage?animal=tiger")
+                                    | Tiger
+
+                    li
+                        a(href="../AnimalPages/reptilePage.html")
+                            | Reptiles
+                        ul.dropdown.nested
+                            li
+                                a(href="./animalpage?animal=gilamonster")
+                                    | Gila Monster
+                            li
+                                a(href="./animalpage?animal=kingkobra")
+                                    | King Kobra
+                            li
+                                a(href="./animalpage?animal=komododragon")
+                                    | Komodo Dragon
+
+            li
+                a(href="../MainPages/about.html")
+                    | About Us
+            li
+                a(href="../MainPages/faq.html")
+                    | FAQ
+            li
+                a(href="../MainPages/login.html")
+                    | Account
+                ul.dropdown
+                    li
+                        a(href="../MainPages/login.html")
+                            | Login
+                    li
+                        a(href="../MainPages/membership.html")
+                            | Sign Up

@@ -1,0 +1,17 @@
+doctype html
+html
+head
+    title= title
+    link(rel="stylesheet" href="./Styles/style.css")
+    link(rel="stylesheet" href="./Styles/productStyle.css")
+    <script type="text/javascript" src="./JavaScripts/header.js"></script>
+    <script type="text/javascript" src="./JavaScripts/read.js"></script>
+    <script type="text/javascript" src="./JavaScripts/search.js"></script>
+    <script type="text/javascript" src="./JavaScripts/read.js"></script>
+body
+    include ./header.jade
+    #main-body
+        include ./sidebar.jade
+        include ./animalpage.jade
+
+    include ./footer.jade

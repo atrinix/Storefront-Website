@@ -1,0 +1,686 @@
+/*ARISTYLE.CSS SHEET START*/
+
+/*LOGIN PAGE START*/
+
+    /*Login Input Fields*/
+.loginValidation {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+    .loginValidation label {
+        transition: .4s ease-out;
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+    .loginValidation input {
+        border: 2px solid #f0f0f0;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: 15px;
+        padding: 10px;
+        width: 100%;
+    }
+
+        .loginValidation input:focus {
+            outline: 0;
+            border-radius: 4px;
+            border: 3px solid rgb(47, 95, 14);
+        }
+
+    .loginValidation.success input {
+        border-color: #2bdd77;
+    }
+
+    .loginValidation.error input {
+        border-color: #ef4331;
+    }
+
+    .loginValidation small {
+        color: #ef4331;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+
+    .loginValidation.error small {
+        visibility: visible;
+    }
+
+.form button {
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+/*Login Spacer*/
+.login-area {
+    display: flex;
+    padding: 18px 18px;
+    height: 90vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Login Form*/
+.login-form {
+    position: relative;
+    max-width: 430px;
+    border-radius: 10px;
+    color: #fff;
+    padding: 80px 60px 40px;
+    background: rgba(019,046,000,0.7);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+    /*Login Image*/
+    .login-form img {
+        position: absolute;
+        top: 20px;
+        left: calc(50% - 121px);
+        width: 250px;
+    }
+
+    .login-form h1 {
+        margin-top: 9rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #E0EDC2;
+    }
+
+/*Login - Signup text*/
+.text-signup {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .text-signup a {
+        text-decoration: none;
+        color: #BDD3A3;
+    }
+
+login-form .text-signup a:hover {
+    text-decoration: underline;
+}
+
+/*Login Password Forget Window*/
+#modal {
+    top: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+    #modal:not(:target) {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+.pass a {
+    color: #BDD3A3;
+}
+
+    .pass a:hover {
+        color: #E0EDC2;
+    }
+
+.password-window {
+    background: rgb(068,093,043);
+    position: relative;
+    border-radius: 12px;
+    padding: 4em 2em;
+}
+
+    .password-window a:hover {
+        color: #E0EDC2;
+    }
+
+.password-window-close {
+    position: absolute;
+    right: 9px;
+    text-decoration: none;
+    top: 9px;
+    font-size: 28px;
+    color: white;
+}
+
+    .password-window-close :hover {
+        color: #E0EDC2;
+    }
+
+/*Login shop text*/
+.shop-link-text {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .shop-link-text a {
+        text-decoration: none;
+        color: #BDD3A3;
+    }
+
+/*LOGIN PAGE END*/
+
+/*--------------------------PAGE--DIVIDER--------------------------*/
+
+/*ABOUT PAGE START*/
+
+/*About Area*/
+.about-area {
+    padding: 22px 62px;
+    justify-content: center;
+    align-items: center;
+    width: 145vw;
+}
+
+/*About form*/
+.about-form {
+    position: relative;
+    margin: 2em 0;
+    padding: 2em;
+    color: #fff;
+    display: flex;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    max-width: 850px;
+    background: rgba(019,046,000,0.7);
+    border-radius: 10px;
+}
+
+    /*About Image*/
+    .about-form img {
+        max-width: 60%;
+        left: -50px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
+        box-shadow: rgba(0,0,0,0.4);
+    }
+
+/*About text*/
+.about-side {
+    width: 300px;
+    position: relative;
+    margin-left: 20px;
+}
+
+/*About images*/
+.about-images {
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.about-second-shop-animal-images {
+    background: rgba(019,046,000,0.05);
+}
+
+.about-overlay {
+    position: absolute;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    top: 2em;
+    opacity: 0.4;
+    transition: opacity 0.30s;
+    display: flex;
+    flex-direction: column;
+    left: 1em;
+    width: 100%;
+}
+
+    .about-overlay > * {
+        transform: translateY(15px);
+        transition: transform 0.30s;
+    }
+
+    .about-overlay:hover {
+        opacity: 1;
+    }
+
+        .about-overlay:hover > * {
+            transform: translateY(0);
+        }
+/*ABOUT PAGE END*/
+
+/*--------------------------PAGE--DIVIDER--------------------------*/
+
+/*CONFIRM MEMBERSHIP PAGE START*/
+.confirmMember-area {
+    display: flex;
+    justify-content: center;
+    height: 64vh;
+    padding: 18px 18px;
+    align-items: center;
+    width: 99vw;
+}
+
+.confirm-form {
+    height: 75%;
+    padding: 11px 20px 39px;
+    position: relative;
+    width: 95%;
+    border-radius: 10px;
+    color: #fff;
+    max-width: 300px;
+    background: rgba(019,046,000,0.7);
+}
+
+    .confirm-form img {
+        position: absolute;
+        top: 20px;
+        width: 195px;
+        left: calc(50% - 98px);
+    }
+
+    .confirm-form h1 {
+        margin-bottom: 2rem;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 9rem;
+        color: #fff;
+    }
+
+    .confirm-form h2 {
+        text-align: center;
+        color: #E0EDC2;
+        letter-spacing: 1px;
+        margin-top: 3rem;
+    }
+/*CONFIRM MEMBERSHIP PAGE END*/
+
+/*--------------------------PAGE--DIVIDER--------------------------*/
+
+/*MEMBERSHIP PAGE*/
+
+/*Membership spacer*/
+.membership-area1 {
+    display: flex;
+    padding: 18px 18px;
+    height: 90vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.membership-area {
+    margin: auto;
+    color: #fff;
+    margin-bottom: 29px;
+    margin-top: 29px;
+    max-width: 705px;
+    border-radius: 12px;
+    padding: 24px 31px;
+    background: rgba(019,046,000,0.7);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    width: 95%;
+}
+
+    .membership-area .membership-title {
+        font-size: 28px;
+        font-weight: 500;
+        position: relative;
+    }
+.membershipValidation {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 45%;
+}
+
+    .membershipValidation label {
+        transition: .4s ease-out;
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+    .membershipValidation input {
+        border: 2px solid #f0f0f0;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: 15px;
+        padding: 10px;
+        width: 90%;
+    }
+
+        .membershipValidation input:focus {
+            outline: 0;
+            border-radius: 4px;
+            border: 3px solid rgb(47, 95, 14);
+        }
+
+    .membershipValidation.success input {
+        border-color: #2bdd77;
+    }
+
+    .membershipValidation.error input {
+        border-color: #ef4331;
+    }
+
+    .membershipValidation small {
+        color: #ef4331;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+
+    .membershipValidation.error small {
+        visibility: visible;
+    }
+
+/*Membership Details fill-ins+text*/
+.membership-content form .membership-Fill-Ins {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 22px 0 14px 0;
+}
+
+form .membership-Fill-Ins .membership-input {
+    width: calc(100% / 2 - 30px);
+    margin-bottom: 13px;
+}
+
+form .membership-input span.membership-details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.membership-Fill-Ins .membership-input input {
+    height: 47px;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    border-bottom-width: 3px;
+    transition: 0.3s ease;
+}
+
+    .membership-Fill-Ins .membership-input input:valid,
+    .membership-Fill-Ins .membership-input input:focus {
+        border-color: #E0EDC2;
+    }
+
+/*Membership Email*/
+form .email-deals .deals-text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*Membership Radio Dots*/
+form input[type="radio"] {
+    display: none;
+}
+
+form .dots {
+    display: flex;
+    justify-content: space-between;
+    width: 31%;
+    margin: 15px 0;
+}
+
+    form .dots label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+        form .dots label .dot {
+            height: 17px;
+            margin-right: 11px;
+            transition: all 0.4s ease;
+            border-radius: 52%;
+            width: 17px;
+            background: #d9d9d9;
+            border: 6px solid transparent;
+        }
+
+#dot1:checked ~ .dots label .one,
+#dot2:checked ~ .dots label .two {
+    background: #5f7a1b;
+    border-color: #d9d9d9;
+}
+/*MEMBERSHIP PAGE END*/
+
+/*--------------------------PAGE--DIVIDER--------------------------*/
+
+/*MAIN BUTTON shared between pages START*/
+.main-button {
+    height: 45px;
+    margin: 35px;
+}
+
+    .main-button input {
+        display: block;
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        color: #2D2D2D;
+        background: #E0EDC2;
+        margin-bottom: 2rem;
+        letter-spacing: 1px;
+        cursor: pointer;
+        outline: none;
+        text-transform: uppercase;
+        margin-left: auto;
+        padding: 10px 20px;
+    }
+
+        .main-button input:hover {
+            background: #BDD3A3;
+            text-decoration: none;
+        }
+
+    .main-button a {
+        text-decoration: none;
+    }
+/*MAIN BUTTON END*/
+
+/*--------------------------PAGE--DIVIDER--------------------------*/
+
+/*SHOP PAGES START*/
+
+/*Shop Area*/
+.shop-spacer {
+    padding: 10px 10px;
+    margin-left: 4em;
+}
+
+.shop-area {
+    display: flex;
+    margin-right: 2em;
+    flex-wrap: wrap;
+    margin-left: 3em;
+    padding: 2px 40px;
+    align-items: center;
+}
+
+    .shop-area .filters {
+        flex-basis: 100%;
+    }
+
+.shop-product-spacer {
+    padding: 15px 35px;
+}
+
+/*Shop Form*/
+.shop-form {
+    position: relative;
+    border-radius: 10px;
+    padding: 28px 18px;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(019,046,000,0.65);
+    color: #fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+    .shop-form h2 {
+        text-align: center;
+        display: block;
+        color: #E0EDC2;
+        letter-spacing: 1px;
+        margin-top: 1.5rem;
+    }
+
+/*Shop Filter*/
+.animals {
+   display:none;
+}
+
+.show {
+    display: block;
+}
+
+.shop-filter-form {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: #fff;
+    background: rgba(019,046,000,0.65);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    justify-content: space-evenly;
+}
+
+#FilterButtonForm {
+    position: relative;
+    display: flex;
+    width: 80%;
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: #fff;
+    background: rgba(019,046,000,0.65);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    justify-content: space-evenly;
+}
+
+.shop-filter-div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: #fff;
+    background: rgba(019,046,000,0.65);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    justify-content: space-evenly;
+}
+
+.shop-filter-form h3 {
+    margin: auto;
+}
+
+.shop-filter-button {
+    border: none;
+    margin-bottom: 0rem;
+    outline: none;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 9px 19px;
+    background: #E0EDC2;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+    .shop-filter-button:hover {
+        text-decoration: none;
+        background: #BDD3A3
+    }
+
+    .shop-filter-button a {
+        text-decoration: none;
+    }
+
+/*Shop images*/
+.shop-animal-images {
+    position: relative;
+    display: block;
+    width: 248px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/*Shop Overlay Effect*/
+.shop-overlay-main {
+    background: rgba(019,046,000,0.5);
+}
+
+.shop-overlay {
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    transition: opacity 0.3s;
+    font-family: sans-serif;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    .shop-overlay > * {
+        transform: translateY(15px);
+        transition: transform 0.3s;
+    }
+
+    .shop-overlay:hover {
+        opacity: 1;
+    }
+
+        .shop-overlay:hover > * {
+            transform: translateY(0);
+        }
+
+.shop-overlay-desciption {
+    font-size: 1.3em;
+    margin-top: 0.8em;
+    text-align: center;
+}
+
+.shop-overlay-price {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+/*SHOP PAGES END*/
+
+/*ARISTYLE.CSS SHEET END*/
+

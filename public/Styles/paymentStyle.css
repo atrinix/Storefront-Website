@@ -1,0 +1,493 @@
+/* Payment Style sheet - Chris camano
+Resource repurposed and modified from 
+https://codepen.io/TheEcnemelc/pen/ZPaJjX
+https://codepen.io/theresa-e/pen/BOBQxR
+W3 schools : margin manipulation 
+Assistance from Zach with final page margins 
+type face manipulation cited from multiple sources
+interactive buttons inspired by the work Fredrico Dossena 
+
+*/
+
+#wrapper {
+    margin: 1% 10% 5% 10%;
+    display: table;
+    table-layout: fixed;
+    width: 80%;
+    height: auto;
+}
+.confirmation-container {
+    border-radius: 25px;
+    background: rgba(019,046,000,0.7);
+    float: none;
+    display: table-cell;
+    width: 100%;
+    transform: translateY(-30px);
+    animation: fade-in 1s forwards 1;
+    padding: 2em 0;
+}
+.confirmation-image{
+    width: 300px;
+    min-width: 150px;
+    margin: 1em;
+}
+.confirmation-text{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.confirmation-text h4 {
+    font-size: 1.75em;
+}
+.confirmation-text .quantity,
+.confirmation-text .price {
+    margin-right: 0;
+}
+
+.confirmation-item{
+    border-radius: 15px;
+    height: auto;
+    background-color: #2d2d2d;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    margin: 2em;
+    padding: 1em 2em;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-items: space-between;
+    align-items: center;
+    align-content: center;
+}
+#ship {
+    font-size: 1.5em;
+}
+#empty-cart-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#empty-cart-details a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: #739421;
+    padding: 1em;
+    border-radius: 15px;
+}
+#empty-cart-details a:hover {
+    background: #a0cf2b;
+}
+.confirmation-image img {
+    width: 100%;
+    height: auto;
+    border: 4px solid black;
+}
+.itemRecap {
+    
+    padding-top:10%;
+    border-radius: 25px;
+    background: rgba(019,046,000,0.7);
+    float: none;
+    display: table-cell;
+  
+    width: 33%;
+    transform: translateY(-30px);
+    animation: fade-in 1s forwards 1;
+}
+
+.payment-information {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    margin-top: 5%;
+    border-radius: 25px;
+    
+    background: rgba(019,046,000);
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+    width: 67%;
+
+    transform: translateY(50px);
+    animation: fade-in 1s forwards 1;
+}
+@keyframes fade-in{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.order {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.order h2{
+    color:white;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.order h3,h4
+{
+    color:white;
+}
+.item {
+    width: 100%;
+    height: auto;
+    background-color: #2d2d2d;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    color: white;
+}
+
+.item:last-of-type {
+    margin-bottom: 0;
+}
+
+.item img {
+    float: left;
+    margin-right: 3%;
+    width: 128px;
+    height: 128px;
+}
+
+.item .info {
+    padding: 3%;
+}
+
+.item .quantity {
+    font-size: 0.8em;
+}
+
+.item .price {
+    background-color: #3FB158;
+    position: absolute;
+    padding: 1% 2%;
+    color: white;
+    bottom: 5%;
+    right: 2%;
+    border-radius: 15px;
+}
+
+hr {
+    border-top: 1px solid #A8A8A8;
+}
+
+#ship, #total {
+    margin: 10% 0;
+    text-align: right;
+}
+
+#total {
+    font-size: 1.75em;
+}
+
+.checkout {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.checkout p {
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 4%;
+}
+
+.checkout p, .checkout i {
+    color: white;
+}
+.checkout i {
+    margin-right: 4%;
+}
+
+.payment-Method{
+    margin-bottom: 0;
+}
+
+.payment {
+    border-radius: 25px;
+    background-color: #2d2d2d;
+    width: 100%;
+    height: 10%;
+    margin-top: 3.8%;
+    padding: 2em 0;
+}
+
+
+a.utilityBtns{
+    display:inline-block;
+    width: 30%;
+    border:0.16em solid #739421;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+    
+}
+
+
+a.utilityBtns:hover{
+    color:#DDDDDD;
+    border-color:#DDDDDD;;
+}  
+a.utilityBtns:active{
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+}
+a.activeBtn{
+    display:inline-block;
+    width: 30%;
+    border:0.16em solid #DDDDDD;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+}
+
+
+a.utilityBtns:hover{
+    color:#dddddd;
+    border-color:#dad3d3;;
+}  
+a.utilityBtns:active{
+    color:#dddddd;
+    border-color:#dad3d3;
+}
+
+a.buyBtn{
+    display:inline-block;
+    margin:3% 3%;
+    border-radius:15px;
+    height: 7%;
+    width:95%;
+    text-align: center;
+    text-decoration:none;
+    font-size: 2em;
+    font-family:'Roboto',sans-serif;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#a0cf2b;
+    text-align:center;
+    transition: all 0.2s;
+    padding: 0.5em 0;
+}
+
+
+a.buyBtn:hover{
+    background-color:#dfecbc;
+}  
+.infos {
+    width: 100%;
+    height:30%;
+    padding: 3% 5% 0 5%;
+}
+
+.infos h2 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 3%;
+}
+
+.visa, .mastercard, .paypal {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    width: 16%;
+    height: auto;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.mastercard, .paypal {
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+.mastercard:hover,
+.paypal:hover {
+    opacity: 1;
+}
+
+.paypal {
+    margin-right: 0;
+}
+.title {
+    color: white ;
+    font-size: 1em ;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+input, select {
+    border: none;
+    padding: 2%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 2%;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+.number {
+    width: 10%;
+    margin-right: 5.3%;
+    margin-bottom: 3%;
+}
+
+.number:last-of-type {
+    margin-right: 0;
+}
+
+.cardHolderName {
+    width: auto;
+    margin-bottom: 3%;
+}
+
+.cardHolderName input {
+    width: 80%;
+}
+
+select {
+    margin-right: 2%;
+}
+
+select:last-of-type {
+    margin-right: 0;
+}
+
+.expiration, .security {
+    margin-bottom: 3%;
+}
+
+.security input {
+    width: 10%;
+}
+/* Shipping information Zach  */
+ .field {
+    color:white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-lighter-gray);
+    padding: .5rem;
+    border-radius: .25rem;
+  }
+   
+  .fieldlabel {
+    color:white;
+    font-size: 1.25em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem
+  }
+  
+  .fieldinput {
+    border-radius: 5px;
+    color:rgb(165, 165, 165);
+    margin-bottom: 3%;
+    border: 0;
+    outline: 0;
+    font-size: 1.25em;
+    width: 90%;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+  }
+  .field:focus-within {
+    border-color: #000;
+  }
+  
+  .fields {
+    display: grid;
+    grid-gap: 1rem;
+  }
+  .fields--2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .fields--3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+.name-box{
+    margin-bottom: 15px;
+    color:white;
+    font-size: 25px;
+    width: 50%;
+}
+ .input-box {
+    width: 50%;
+    margin-bottom: 15px;
+    color:white;
+    font-size: 25px;
+    
+}
+.opacity{
+    opacity: 1;
+}
+.item .removeBtn {
+    background: #739421;
+    color: white;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 100%;
+    text-decoration: none;
+    float: right;
+    margin: 0;
+}
+.form-group{
+   width:100%;
+}
+.input-group{
+    margin-top:20%;
+    display:inline-flex;
+    width:100%;
+}
+
+.quantBtn{
+    text-align: center;
+    text-decoration:none;
+    font-size: 15px;
+    font-family:'Roboto',sans-serif;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#739421;
+    text-align:center;
+    transition: all 0.2s;
+  
+}
+
+.input-group-btn #up{
+    border-radius:0 5px 5px 0;
+    
+}
+.input-group-btn #down{
+    border-radius:5px 0 0 5px;
+}
+.form-control-input-number{
+    width:5%;
+}
+.form-group {
+    width: 30%;
+    margin: 30px 50px 30px 30px;
+    
+}

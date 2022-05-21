@@ -1,0 +1,234 @@
+<!--
+    Author:         Arielle Riray
+    Here is the updated membership efor the CSS assignment
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/AriStyle.css">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <script type="text/javascript" src="../JavaScripts/header.js"></script>
+    <script type="text/javascript" src="../JavaScripts/search.js"></script>
+    <title>Illegal Animals - Membership</title>
+</head>
+<body>
+    <script type="text/javascript" src="../JavaScripts/productCookie.js"></script>
+    <!-- Begin header -->
+    <!-- Header updated with javascript dynamic page generation-CC -->
+    <div id="header">
+        <div id="toolbar">
+            <!-- Logo, search bar, cart (ZC) -->
+            <!-- Company logo -->
+            <a href="../MainPages/index.html">
+                <img id="header-logo" src="../Assets/logo.png" alt="Company logo">
+            </a>
+            <div class="spacer"></div>
+            <!-- Search bar -->
+            <input type="text" id="header-search" placeholder="Search">
+            <!-- Search icon -->
+            <a onclick="getSearchTerm()">
+                <img src="../Assets/magnifying_glass.png" width="25px">
+            </a>
+            <!-- Shopping cart icon -->
+            <div id="cart-icon">
+                <a href="../MainPages/Shipping.html">
+                    <img src="../Assets/cart.png" alt="Shopping cart icon" width="50px">
+                </a>
+            </div>
+        </div>  <!-- End logo, search bar, cart -->
+        <div id="header-nav"> <!-- Begin nav links -->
+            <ul role="navigation">
+                <li>
+                    <a href="../MainPages/index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="current-page-nav-link"><a href="../MainPages/shop.html">Shop</a>
+                    <ul class="dropdown">
+                        <li class="current-page-nav-link"><a href="../AnimalPages/amphibianPage.html">Amphibians</a>
+                            <ul class="dropdown nested">
+                                <li>
+                                    <a  href="../animalpage?animal=coloradorivertoad">Colorado River Toad</a> 
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=corroboree">Corroboree Frog</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=poisondartfrog">Poison Dart Frog</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="../AnimalPages/avianPage.html">Avians</a>
+                            <ul class="dropdown nested">
+                                <li>
+                                    <a href="../animalpage?animal=californiacondor"> California Condor</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=cassowary"> Cassowary</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=secretary">Secretary Bird</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="../AnimalPages/mammalPage.html">Mammals</a>
+                            <ul class="dropdown nested">
+                                <li>
+                                    <a href="../animalpage?animal=pangolin">Pangolin</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=platypus">Platypus</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=tiger">Tiger</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="../AnimalPages/reptilePage.html">Reptiles</a>
+                            <ul class="dropdown nested">
+                                <li>
+                                    <a href="../animalpage?animal=gilamonster" > Gila Monster</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=kingcobra"> King Kobra</a>
+                                </li>
+                                <li>
+                                    <a href="../animalpage?animal=komododragon">Komodo Dragon</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../MainPages/about.html">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="../MainPages/faq.html">
+                        FAQ
+                    </a>
+                </li>
+                <li><a href="../MainPages/login.html">Account</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="../MainPages/login.html">
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../MainPages/membership.html">
+                                Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+           
+        </div>
+    </div>  <!-- End header -->
+    <div id="main-body">
+        <!-- Begin main page content (ZC) -->
+        <div class="membership-area1">
+            <div class="membership-area">
+                <div class="membership-title">Membership</div>
+                <div class="membership-content">
+                    <form>
+                        <div class="membership-Fill-Ins">
+
+                            <div class="membershipValidation">
+                                <label for="m-username">Username</label>
+                                <input type="text" placeholder="Enter your preferred username" id="m-username" />
+                                <small>Error message</small>
+                            </div>
+                            <div class="membershipValidation">
+                                <label for="m-email">Email</label>
+                                <input type="email" placeholder="example@email.com" id="m-email" />
+                                <small>Error message</small>
+                            </div>
+                            <div class="membershipValidation">
+                                <label for="m-firstname">First Name</label>
+                                <input type="text" placeholder="Enter your first name" id="m-firstname" />
+                                <small>Error message</small>
+                            </div>
+                            <div class="membershipValidation">
+                                <label for="m-lastname">Last Name</label>
+                                <input type="text" placeholder="Enter your last name" id="m-lastname" />
+                                <small>Error message</small>
+                            </div>
+                            <div class="membershipValidation">
+                                <label for="m-phone1">Phone Number</label>
+                                <input type="text" placeholder="Enter your number" id="m-phone1" />
+                                <small>Error message</small>
+                            </div>
+                            <div class="membershipValidation">
+                                <label for="m-phone2">Secondary Phone Number</label>
+                                <input type="text" placeholder="Enter your second number" id="m-phone2" />
+                                <small>Error message</small>
+                            </div>
+                            <div class="membershipValidation">
+                                <label for="m-password">Password</label>
+                                <input type="password" placeholder="Enter your password" id="m-password" />
+                                <small>Error message</small>
+                            </div>
+                            <div class="membershipValidation">
+                                <label for="m-password2">Confirm Password</label>
+                                <input type="password" placeholder="Confirm your password" id="m-password2" />
+                                <small>Error message</small>
+                            </div>
+
+                        </div>
+                        <div class="email-deals">
+                            <input type="radio" name="deals" id="dot1">
+                            <input type="radio" name="deals" id="dot2">
+                            <div class="deals-text">Would you be interested in recieving weekly emails regarding deals for our products?</div>
+                            <div class="dots">
+                                <label for="dot1">
+                                    <span class="dot one"></span>
+                                    <span class="deals">Yes</span>
+                                </label>
+                                <label for="dot2">
+                                    <span class="dot two"></span>
+                                    <span class="deals">No</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="bttn" class="main-button">
+                            <a href="../MainPages/ConfirmMembership.html">
+                                <input type="button" value="Register Membership">
+                            </a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            </div>
+            <!-- End main page content (ZC) -->
+        </div>
+        <script type='text/javascript' src='../JavaScripts/memberValid.js'></script>
+        <div id="footer">
+            <!-- Begin footer (ZC) -->
+            <a class="footer-link" href="../MainPages/index.html">
+                <h5>Home</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/shop.html">
+                <h5>Shop</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/about.html">
+                <h5>About Us</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/faq.html">
+                <h5>FAQ</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/login.html">
+                <h5>Login</h5>
+            </a>
+            <a class="footer-link" href="../MainPages/membership.html">
+                <h5>New Membership</h5>
+            </a>
+        </div>
+        <!-- End footer -->
+</body>
+</html>
